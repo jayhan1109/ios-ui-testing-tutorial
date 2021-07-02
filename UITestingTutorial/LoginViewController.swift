@@ -64,6 +64,8 @@ class LoginViewController: UIViewController {
         alertVC.addAction(.init(title: "Ok", style: .default, handler: nil))
 
         present(alertVC, animated: true, completion: nil)
+        
+        loadingActivity.stopAnimating()
     }
 }
 
